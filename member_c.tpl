@@ -25,6 +25,7 @@
         <view x-for="{{.buttons}}" align-items="center" flex-direction="column" onTouch="{{ .item.link}}" height="50"  width="20%">
             <image width="20" height="20" url="{{.item.image}}"/>
             <label margin-top="4" text="{{.item.text}}" textColor="#666666" textSize="12" textAlignment="center" />
+            <view width="4" height="4"  position="absolute" right="30%" top="0" backgroundColor="#ff0000" cornerRadius="2" onTouch="www.test.com"/>
         </view>
     </view>
 </card>
