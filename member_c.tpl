@@ -21,11 +21,13 @@
             <label text="{{ .text4}}"  flex-grow="1" textSize="14" textColor="#ffffff"/>
         </view>
     </view>
-    <view flex-direction="row" width="100%" margin-top="10" height="50">
-        <view x-for="{{.buttons}}" align-items="center" flex-direction="column" onTouch="{{ .item.link}}" height="50"  width="20%">
+    <view flex-direction="row" width="100%" margin-top="6" height="50">
+        <view x-for="{{.buttons}}" align-items="center" flex-direction="column" onTouch="{{ .item.link}}" width="20%">
+            <view width="35%" position="absolute" right="0">
+                <view backgroundColor="#ff0000" cornerRadius="2" width="4"  height="4"/>
+            </view>
             <image width="20" height="20" url="{{.item.image}}"/>
             <label margin-top="4" text="{{.item.text}}" textColor="#666666" textSize="12" textAlignment="center" />
-            <view width="4" height="4"  position="absolute" right="30%" top="0" backgroundColor="#ff0000" cornerRadius="2" onTouch="www.test.com"/>
         </view>
     </view>
 </card>
